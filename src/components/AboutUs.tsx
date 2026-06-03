@@ -19,8 +19,8 @@ export default function AboutUs() {
         <div className="md:col-span-7 space-y-6">
           <div className="prose text-moss-dark/65 leading-relaxed text-sm md:text-base space-y-4">
             <p>
-              Mein Name ist <span className="text-moss font-semibold">Marion Muszarsky</span> und ich bin die Gründerin von{' '}
-              <span className="text-moss font-semibold">La Mosella</span>.
+              Mein Name ist <span className="text-moss font-semibold">Marion Muszarsky</span> und ich bin die Gründerin der {' '}
+              <span className="text-moss font-semibold">La Mosella Seifenmanufaktur</span>.
             </p>
             <p>
               Was einst als kreatives Hobby begann, entwickelte sich zu einer großen Leidenschaft. Nach mehreren Jahren

@@ -48,10 +48,7 @@ export default function App() {
       </main>
 
       {/* Elegant Footer */}
-      <Footer 
-        setActiveSection={handleSectionChange} 
-        onOpenContact={() => setIsContactOpen(true)}
-      />
+      <Footer setActiveSection={handleSectionChange} />
 
       {/* Inquiry Form Modal Drawer Popup */}
       <ContactModal 

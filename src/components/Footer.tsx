@@ -1,17 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ActiveSection } from '../types';
 import { Leaf, Phone, Mail, MapPin } from 'lucide-react';
 
 interface FooterProps {
   setActiveSection: (section: ActiveSection) => void;
-  onOpenContact: () => void;
 }
 
-export default function Footer({ setActiveSection, onOpenContact }: FooterProps) {
+export default function Footer({ setActiveSection }: FooterProps) {
+  const [showImpressum, setShowImpressum] = useState(false);
+
   return (
     <footer className="bg-moss text-vanilla border-t-2 border-gold/40 py-12 px-4 md:px-8 mt-16 relative">
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gold to-transparent" />
-      
+
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8">
         {/* Left Column: Brand Column */}
         <div className="md:col-span-5 space-y-4">
@@ -29,8 +30,8 @@ export default function Footer({ setActiveSection, onOpenContact }: FooterProps)
             </div>
           </div>
           <p className="font-sans text-xs text-vanilla-dark/80 leading-relaxed max-w-sm">
-            Liebevoll kaltgerührte Naturseifen aus Traben-Trarbach an der Mosel. 
-            Frei von Palmöl, synthetischen Tensiden und Duftstoffen. Rein, wirksam und reichhaltig hautfreundlich.
+            Liebevoll kaltgerührte Naturseifen aus Traben-Trarbach an der Mosel.
+            Frei von Palmöl und synthetischen Tensiden. Rein, wirksam und reichhaltig hautfreundlich.
           </p>
           <div className="text-[10px] text-gold-light font-serif">
             ❦ Handwerkliche Saponifikation mit Tradition
@@ -45,7 +46,7 @@ export default function Footer({ setActiveSection, onOpenContact }: FooterProps)
           <ul className="space-y-2 text-xs font-sans text-vanilla-dark/95">
             <li>
               <button onClick={() => setActiveSection('home')} className="hover:text-white hover:underline whitespace-nowrap" id="footer-link-home">
-                ➔ Startseite / Fresko
+                ➔ Startseite
               </button>
             </li>
             <li>
@@ -61,11 +62,6 @@ export default function Footer({ setActiveSection, onOpenContact }: FooterProps)
             <li>
               <button onClick={() => setActiveSection('contact')} className="hover:text-white hover:underline whitespace-nowrap" id="footer-link-contact-page">
                 ➔ Kontakt
-              </button>
-            </li>
-            <li>
-              <button onClick={onOpenContact} className="hover:text-white hover:underline text-gold-light font-semibold" id="footer-link-contact">
-                ✉ Bestellanfrage senden
               </button>
             </li>
           </ul>
@@ -99,11 +95,47 @@ export default function Footer({ setActiveSection, onOpenContact }: FooterProps)
         </div>
       </div>
 
+      {/* Impressum */}
+      {showImpressum && (
+        <div className="max-w-6xl mx-auto mt-8 pt-6 border-t border-gold/15 text-xs text-vanilla-dark/80 font-sans space-y-3">
+          <h3 className="font-serif text-base font-bold text-gold-light">Impressum</h3>
+          <div className="space-y-1">
+            <p className="font-semibold text-vanilla/90">Angaben gemäß § 5 TMG</p>
+            <p>Marion Muszarsky</p>
+            <p>Litziger Weg 14</p>
+            <p>56841 Traben-Trarbach</p>
+          </div>
+          <div className="space-y-1">
+            <p><span className="text-vanilla/70">Telefon:</span> 0151-67000929</p>
+            <p><span className="text-vanilla/70">E-Mail:</span> lm-seifenmanufaktur@t-online.de</p>
+          </div>
+          <div className="space-y-1">
+            <p><span className="text-vanilla/70">USt-IdNr. gemäß § 27a UStG:</span> DE300885658</p>
+          </div>
+          <div className="space-y-1">
+            <p className="font-semibold text-vanilla/90">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</p>
+            <p>Marion Muszarsky, Litziger Weg 14, 56841 Traben-Trarbach</p>
+          </div>
+          <div className="space-y-1">
+            <p className="font-semibold text-vanilla/90">Website-Erstellung</p>
+            <p>Franz Muszarsky</p>
+          </div>
+        </div>
+      )}
+
       <div className="max-w-6xl mx-auto mt-10 pt-6 border-t border-gold/15 flex flex-col sm:flex-row items-center justify-between text-[11px] text-vanilla-dark/60">
         <p>© 2026 La Mosella Seifenmanufaktur. Alle Rechte vorbehalten.</p>
-        <p className="mt-2 sm:mt-0 font-serif italic text-gold-light text-xs">
-          Handgefertigt mit rein biologischen Inhaltsstoffen.
-        </p>
+        <div className="flex items-center gap-4 mt-2 sm:mt-0">
+          <button
+            onClick={() => setShowImpressum(v => !v)}
+            className="hover:text-gold-light hover:underline transition-colors"
+          >
+            Impressum
+          </button>
+          <p className="font-serif italic text-gold-light text-xs">
+            Handgefertigt mit rein biologischen Inhaltsstoffen.
+          </p>
+        </div>
       </div>
     </footer>
   );
