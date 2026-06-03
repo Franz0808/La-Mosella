@@ -59,8 +59,8 @@ export default function Footer({ setActiveSection, onOpenContact }: FooterProps)
               </button>
             </li>
             <li>
-              <button onClick={() => setActiveSection('benefits')} className="hover:text-white hover:underline whitespace-nowrap" id="footer-link-benefits">
-                ➔ Warum Handgemacht?
+              <button onClick={() => setActiveSection('contact')} className="hover:text-white hover:underline whitespace-nowrap" id="footer-link-contact-page">
+                ➔ Kontakt
               </button>
             </li>
             <li>

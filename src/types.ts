@@ -24,4 +24,4 @@ export interface Soap {
   };
 }
 
-export type ActiveSection = 'home' | 'soaps' | 'about' | 'benefits';
+export type ActiveSection = 'home' | 'soaps' | 'about' | 'contact';

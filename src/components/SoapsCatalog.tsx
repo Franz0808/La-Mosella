@@ -22,7 +22,7 @@ export default function SoapsCatalog() {
           meine Seifengalerie
         </h2>
         <div className="w-16 h-[1px] bg-gold mx-auto my-4" />
-        <p className="font-sans text-stone-600 text-sm max-w-xl mx-auto">
+        <p className="font-sans text-moss-dark/65 text-sm max-w-xl mx-auto">
           Milde Reinigung, veredelt mit reichhaltigen Bio-Ölen, Kräutersuden und regionalen Mosel-Rohstoffen.
           Klicken Sie auf ein Seifenstück, um alle Inhaltsstoffe einzusehen.
         </p>
@@ -41,7 +41,7 @@ export default function SoapsCatalog() {
           {searchTerm && (
             <button
               onClick={() => setSearchTerm('')}
-              className="absolute right-2 top-2 text-stone-400 hover:text-stone-600 text-xs"
+              className="absolute right-2 top-2 text-moss/50 hover:text-moss text-xs"
             >
               ✕
             </button>
@@ -72,7 +72,7 @@ export default function SoapsCatalog() {
               <h3 className="font-serif text-2xl font-bold text-moss-dark mb-2 leading-tight">
                 {soap.name}
               </h3>
-              <p className="font-sans text-xs text-stone-600 leading-relaxed mb-3 flex-1">
+              <p className="font-sans text-xs text-moss-dark/65 leading-relaxed mb-3 flex-1">
                 {soap.beschreibung}
               </p>
               <p className="font-serif text-xs italic text-gold leading-snug">
@@ -82,7 +82,7 @@ export default function SoapsCatalog() {
 
             {/* Footer */}
             <div className="border-t border-gold/10 px-5 py-3 flex items-center justify-between bg-vanilla/40">
-              <span className="font-serif text-sm text-stone-500">{soap.gewicht}</span>
+              <span className="font-serif text-sm text-moss-dark/55">{soap.gewicht}</span>
               <span className="font-serif text-xs text-moss flex items-center gap-1">
                 Inhaltsstoffe <ChevronRight className="w-3 h-3 text-gold" />
               </span>
@@ -94,7 +94,7 @@ export default function SoapsCatalog() {
           <div className="col-span-full text-center py-16 bg-vanilla-dark/30 rounded-xl max-w-lg mx-auto border border-gold/10">
             <ShieldAlert className="w-12 h-12 text-gold mx-auto mb-3" />
             <p className="font-serif text-lg text-moss">Keine Seife gefunden.</p>
-            <p className="font-sans text-xs text-stone-500 mt-1">Ändern Sie Ihren Suchbegriff.</p>
+            <p className="font-sans text-xs text-moss-dark/55 mt-1">Ändern Sie Ihren Suchbegriff.</p>
           </div>
         )}
       </div>
@@ -132,14 +132,14 @@ export default function SoapsCatalog() {
                   <h3 className="font-serif text-3xl font-bold text-moss-dark leading-tight">
                     {selectedSoap.name}
                   </h3>
-                  <p className="font-sans text-sm text-stone-600 leading-relaxed">
+                  <p className="font-sans text-sm text-moss-dark/65 leading-relaxed">
                     {selectedSoap.beschreibung}
                   </p>
                   <div>
                     <span className="font-serif text-[10px] uppercase tracking-widest text-gold block mb-1">
                       Duftcharakter
                     </span>
-                    <p className="font-serif text-sm italic text-stone-600 leading-relaxed">
+                    <p className="font-serif text-sm italic text-moss-dark/65 leading-relaxed">
                       {selectedSoap.duft}
                     </p>
                   </div>
@@ -163,7 +163,7 @@ export default function SoapsCatalog() {
                 <h4 className="font-serif text-lg font-bold text-moss border-b border-gold/10 pb-2 mb-4">
                   Inhaltsstoffe / Ingredients
                 </h4>
-                <p className="font-sans text-xs text-stone-600 leading-relaxed whitespace-pre-wrap border border-gold/20 rounded-lg p-4 bg-vanilla-dark/20">
+                <p className="font-sans text-xs text-moss-dark/65 leading-relaxed whitespace-pre-wrap border border-gold/20 rounded-lg p-4 bg-vanilla-dark/20">
                   {selectedSoap.inhaltsstoffe}
                 </p>
               </div>

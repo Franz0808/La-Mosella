@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import InteractiveFresco from './components/InteractiveFresco';
 import SoapsCatalog from './components/SoapsCatalog';
 import AboutUs from './components/AboutUs';
-import WhyHandmade from './components/WhyHandmade';
+import KontaktPage from './components/KontaktPage';
 import ContactModal from './components/ContactModal';
 
 export default function App() {
@@ -21,10 +21,9 @@ export default function App() {
   return (
     <div className="min-h-screen flex flex-col justify-between bg-vanilla text-moss-dark selection:bg-moss/20 selection:text-moss-dark">
       {/* Persistent Elegant Header */}
-      <Header 
-        activeSection={activeSection} 
-        setActiveSection={handleSectionChange} 
-        onOpenContact={() => setIsContactOpen(true)}
+      <Header
+        activeSection={activeSection}
+        setActiveSection={handleSectionChange}
       />
 
       {/* Main Dynamic View Area */}
@@ -41,8 +40,8 @@ export default function App() {
           <AboutUs />
         )}
         
-        {activeSection === 'benefits' && (
-          <WhyHandmade />
+        {activeSection === 'contact' && (
+          <KontaktPage />
         )}
 
 

@@ -50,11 +50,11 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
             {submitted ? (
               <div className="py-8 text-center space-y-4">
-                <div className="w-16 h-16 bg-[#EFF3EE] border border-moss rounded-full flex items-center justify-center mx-auto mb-2 animate-pulse">
+                <div className="w-16 h-16 bg-moss/10 border border-moss rounded-full flex items-center justify-center mx-auto mb-2 animate-pulse">
                   <CheckCircle2 className="w-10 h-10 text-moss" />
                 </div>
                 <h3 className="font-serif text-2xl md:text-3xl font-bold text-moss">Vielen Dank für Ihre Anfrage!</h3>
-                <p className="font-sans text-xs text-stone-600 leading-relaxed max-w-sm mx-auto">
+                <p className="font-sans text-xs text-moss-dark/65 leading-relaxed max-w-sm mx-auto">
                   Ihre herzliche Anfrage zur La Mosella Seifenmanufaktur wurde erfolgreich übermittelt. 
                   Marion Muszarsky wird sich zeitnah unter Ihrer E-Mail-Adresse melden, um Ihre Bestellung oder Ihren Wunsch zu besprechen.
                 </p>
@@ -80,7 +80,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                   <h3 className="font-serif text-2xl font-bold text-moss-dark leading-tight">
                     Nachricht senden
                   </h3>
-                  <p className="font-sans text-[10px] uppercase tracking-widest text-[#8A795A] font-medium -mt-0.5">
+                  <p className="font-sans text-[10px] uppercase tracking-widest text-gold font-medium -mt-0.5">
                     La Mosella Manufaktur-Post
                   </p>
                   <div className="w-12 h-[1px] bg-gold mx-auto my-3" />
@@ -88,7 +88,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
                 <form onSubmit={handleSub} className="space-y-4 text-left">
                   {error && (
-                    <p className="text-xs text-red-600 text-center font-sans font-semibold">{error}</p>
+                    <p className="text-xs text-gold text-center font-sans font-semibold">{error}</p>
                   )}
 
                   <div>
@@ -143,7 +143,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                     />
                   </div>
 
-                  <div className="flex justify-between items-center text-[10px] text-stone-500 py-1 font-sans">
+                  <div className="flex justify-between items-center text-[10px] text-moss-dark/55 py-1 font-sans">
                     <span className="flex items-center space-x-1">
                       <Shield className="w-3 h-3 text-moss" />
                       <span>Sichere Übertragung</span>
