@@ -11,7 +11,7 @@ const NAV_CARDS: { id: ActiveSection; title: string; desc: string; btn: string; 
     id: 'soaps',
     title: 'Seifengalerie',
     desc: 'Entdecke meine Seifenvielfalt – hergestellt im traditionellen Kaltverfahren mit wertvollen Rohstoffen.',
-    btn: 'Katalog öffnen ❦',
+    btn: 'Zur Galerie ❦',
     img: '/images/Icon Soapes.webp',
   },
   {
@@ -82,7 +82,7 @@ function NavCardsSection({ onNavigate }: { onNavigate: (s: ActiveSection) => voi
           transition={{ duration: 0.6, ease: 'easeOut' }}
           className="text-center mb-14 md:mb-20"
         >
-          <span className="font-serif italic text-vanilla/80 text-xs md:text-sm tracking-[0.35em] uppercase block">
+          <span className="font-serif italic text-moss text-xs md:text-sm tracking-[0.35em] uppercase block">
             Pfade durch die Manufaktur
           </span>
           <OrnamentDivider className="mt-5" light />

@@ -1,15 +1,20 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, ChevronRight, ShieldAlert } from 'lucide-react';
-import { SOAP_ENTRIES, SoapEntry } from '../data/soapEntries';
+import { SOAP_ENTRIES, SoapEntry, ProduktKategorie } from '../data/soapEntries';
+
+const KATEGORIE_FILTERS: (ProduktKategorie | 'Alle')[] = ['Alle', 'Seife', 'Badekugel'];
 
 export default function SoapsCatalog() {
   const [searchTerm, setSearchTerm] = useState('');
+  const [kategorieFilter, setKategorieFilter] = useState<ProduktKategorie | 'Alle'>('Alle');
   const [selectedSoap, setSelectedSoap] = useState<SoapEntry | null>(null);
 
-  const filtered = SOAP_ENTRIES.filter(s =>
-    s.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const filtered = SOAP_ENTRIES.filter(s => {
+    const matchesSearch = s.name.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesKategorie = kategorieFilter === 'Alle' || s.produktkategorie === kategorieFilter;
+    return matchesSearch && matchesKategorie;
+  });
 
   return (
     <div className="bg-vanilla py-10 px-4 min-h-screen page-enter">
@@ -19,7 +24,7 @@ export default function SoapsCatalog() {
           Naturreine Seifenkunst der Mosel
         </span>
         <h2 className="font-serif text-3xl md:text-5xl font-normal text-moss tracking-tight">
-          meine Seifengalerie
+          Meine Seifengalerie
         </h2>
         <div className="w-16 h-[1px] bg-gold mx-auto my-4" />
         <p className="font-sans text-moss-dark/65 text-sm max-w-xl mx-auto">
@@ -28,12 +33,27 @@ export default function SoapsCatalog() {
         </p>
       </div>
 
-      {/* Search */}
-      <div className="max-w-5xl mx-auto mb-10 flex justify-end border-b border-gold/20 pb-6">
+      {/* Search + Filters */}
+      <div className="max-w-5xl mx-auto mb-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-gold/20 pb-6">
+        <div className="flex items-center gap-2 flex-wrap">
+          {KATEGORIE_FILTERS.map(k => (
+            <button
+              key={k}
+              onClick={() => setKategorieFilter(k)}
+              className={`font-serif text-sm px-4 py-1.5 rounded-full border transition-all duration-200 cursor-pointer ${
+                kategorieFilter === k
+                  ? 'bg-moss text-vanilla border-moss'
+                  : 'bg-transparent text-moss border-gold/40 hover:border-moss'
+              }`}
+            >
+              {k}
+            </button>
+          ))}
+        </div>
         <div className="relative w-full md:w-64">
           <input
             type="text"
-            placeholder="Seife suchen…"
+            placeholder="Produkt suchen…"
             value={searchTerm}
             onChange={e => setSearchTerm(e.target.value)}
             className="w-full bg-vanilla-dark/50 border border-gold/40 rounded-lg px-3 py-1.5 text-sm font-sans focus:outline-none focus:border-moss text-moss-dark"
@@ -82,7 +102,9 @@ export default function SoapsCatalog() {
 
             {/* Footer */}
             <div className="border-t border-gold/10 px-5 py-3 flex items-center justify-between bg-vanilla/40">
-              <span className="font-serif text-sm text-moss-dark/55">{soap.gewicht}</span>
+              <span className="font-serif text-xs font-semibold px-2 py-0.5 rounded-full border border-gold/40 text-moss bg-vanilla-dark/60">
+                {soap.produktkategorie}
+              </span>
               <span className="font-serif text-xs text-moss flex items-center gap-1">
                 Inhaltsstoffe <ChevronRight className="w-3 h-3 text-gold" />
               </span>
@@ -143,9 +165,13 @@ export default function SoapsCatalog() {
                       {selectedSoap.duft}
                     </p>
                   </div>
-                  <div className="flex items-center gap-3 pt-2 border-t border-gold/10 mt-auto">
-                    <span className="font-serif text-[10px] uppercase tracking-widest text-gold">Gewicht</span>
-                    <span className="font-serif text-sm text-moss-dark font-bold">{selectedSoap.gewicht}</span>
+                  <div className="flex items-center gap-3 pt-2 border-t border-gold/10 mt-auto flex-wrap">
+                    <span className="font-serif text-xs font-semibold px-2 py-0.5 rounded-full border border-gold/40 text-moss bg-vanilla-dark/60">
+                      {selectedSoap.produktkategorie}
+                    </span>
+                    <span className="font-serif text-sm text-moss-dark font-bold">{selectedSoap.preis}</span>
+                    <span className="font-serif text-[10px] uppercase tracking-widest text-gold ml-auto">Gewicht</span>
+                    <span className="font-serif text-sm text-moss-dark font-bold">ca. {selectedSoap.gewicht}</span>
                   </div>
                 </div>
 

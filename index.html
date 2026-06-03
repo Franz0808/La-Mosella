@@ -1,13 +1,79 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
+
+    <!-- Primary SEO -->
+    <title>La Mosella – Handgemachte Naturseifen aus dem Moseltal</title>
+    <meta name="description" content="La Mosella Seifenmanufaktur von Marion Muszarsky: handgerührte Naturseifen im Kaltverfahren aus hochwertigen Pflanzenölen. Lavendel, Weinbergpfirsich, Moseltraube und mehr." />
+    <meta name="keywords" content="Naturseife, handgemachte Seife, Kaltverfahren, Seifenmanufaktur, Moseltal, Marion Muszarsky, La Mosella, Naturseifen kaufen, vegane Seife, Lavendelseife" />
+    <meta name="author" content="Marion Muszarsky – La Mosella Seifenmanufaktur" />
+    <link rel="canonical" href="https://www.la-mosella-seifen.de/" />
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.la-mosella-seifen.de/" />
+    <meta property="og:title" content="La Mosella – Handgemachte Naturseifen aus dem Moseltal" />
+    <meta property="og:description" content="Handgerührte Naturseifen im Kaltverfahren – mit Liebe hergestellt von Marion Muszarsky aus dem Moseltal." />
+    <meta property="og:image" content="https://www.la-mosella-seifen.de/images/La%20Mosella%20Soaps.png" />
+    <meta property="og:image:alt" content="La Mosella Naturseifen" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:site_name" content="La Mosella Seifenmanufaktur" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="La Mosella – Handgemachte Naturseifen aus dem Moseltal" />
+    <meta name="twitter:description" content="Handgerührte Naturseifen im Kaltverfahren – mit Liebe hergestellt von Marion Muszarsky aus dem Moseltal." />
+    <meta name="twitter:image" content="https://www.la-mosella-seifen.de/images/La%20Mosella%20Soaps.png" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Structured Data: Local Business + Product -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://www.la-mosella-seifen.de/#business",
+          "name": "La Mosella Seifenmanufaktur",
+          "description": "Handgemachte Naturseifen im Kaltverfahren aus hochwertigen Pflanzenölen und Buttern, hergestellt von Marion Muszarsky im Moseltal.",
+          "url": "https://www.la-mosella-seifen.de/",
+          "email": "lm-seifenmanufaktur@t-online.de",
+          "image": "https://www.la-mosella-seifen.de/images/La%20Mosella%20Soaps.png",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Litziger Weg 14",
+            "postalCode": "56841",
+            "addressLocality": "Traben-Trarbach",
+            "addressCountry": "DE",
+            "addressRegion": "Rheinland-Pfalz"
+          },
+          "priceRange": "€€",
+          "sameAs": []
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.la-mosella-seifen.de/#website",
+          "url": "https://www.la-mosella-seifen.de/",
+          "name": "La Mosella Seifenmanufaktur",
+          "inLanguage": "de-DE",
+          "publisher": {
+            "@id": "https://www.la-mosella-seifen.de/#business"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Favicon (add a favicon.ico / favicon.svg to /public when available) -->
+    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /> -->
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-

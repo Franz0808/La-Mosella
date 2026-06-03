@@ -15,6 +15,8 @@ const soap = {
   gewicht: '90g',
   preis: '7,00 €',
 
+  produktkategorie: 'Seife',
+
   // Duftbeschreibung: Was riecht man? Kopnoten, Herznoten, Basisnoten etc.
   duft: 'Ein weicher, warmer Kokosduft mit cremigen Vanille- und Kaschmirnoten- sanft, elegant und wunderbar harmonisch.',
 

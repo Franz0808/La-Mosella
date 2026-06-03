@@ -17,6 +17,9 @@ const soap = {
   // Verkaufspreis, z.B. "8,50 €"
   preis: '0,00 €',
 
+  // Produktkategorie: 'Seife' oder 'Badekugel'
+  produktkategorie: 'Seife',
+
   // Duftbeschreibung: Was riecht man? Kopnoten, Herznoten, Basisnoten etc.
   duft: 'Beschreibe den Duft der Seife. Z.B. fruchtig, kräuterig, blumig, holzig …',
 

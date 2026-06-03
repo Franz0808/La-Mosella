@@ -1,8 +1,12 @@
+export type ProduktKategorie = 'Seife' | 'Badekugel';
+
 export interface SoapEntry {
   name: string;
   image: string;
   beschreibung: string;
   gewicht: string;
+  preis: string;
+  produktkategorie: ProduktKategorie;
   duft: string;
   inhaltsstoffe: string;
 }
