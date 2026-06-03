@@ -7,9 +7,9 @@
   --color-vanilla: #FDFBF2;
   --color-vanilla-dark: #FAF5E0;
   --color-vanilla-cream: #F5EFCF;
-  --color-moss: #3A5A3A;
-  --color-moss-light: #5B7B5B;
-  --color-moss-dark: #243B24;
+  --color-moss: #447C18;
+  --color-moss-light: #5CA020;
+  --color-moss-dark: #2D5410;
   --color-gold: #C09E5A;
   --color-gold-light: #DEC28C;
 }
@@ -83,14 +83,14 @@
 
   /* Custom styling for details and images */
   .fresco-glow {
-    box-shadow: 0 0 30px rgba(58, 90, 58, 0.1);
+    box-shadow: 0 0 30px rgba(68, 124, 24, 0.1);
   }
 
   /* Floating bubble effect */
   .bubble-soft {
     border-radius: 50%;
     background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8), rgba(253, 251, 242, 0.2) 70%, rgba(192, 158, 90, 0.3));
-    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.6), 0 4px 12px rgba(58, 90, 58, 0.05);
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.6), 0 4px 12px rgba(68, 124, 24, 0.05);
     backdrop-filter: blur(1px);
     pointer-events: none;
     position: absolute;

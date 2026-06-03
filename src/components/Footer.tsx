@@ -50,7 +50,7 @@ export default function Footer({ setActiveSection, onOpenContact }: FooterProps)
             </li>
             <li>
               <button onClick={() => setActiveSection('soaps')} className="hover:text-white hover:underline whitespace-nowrap" id="footer-link-soaps">
-                ➔ Seifenkatalog
+                ➔ Seifengalerie
               </button>
             </li>
             <li>

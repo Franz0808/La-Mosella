@@ -13,13 +13,9 @@ export default function Header({ activeSection, setActiveSection, onOpenContact 
 
   const navItems = [
     { id: 'home', label: 'Startseite' },
-    { id: 'soaps', label: 'Seifenkatalog' },
+    { id: 'soaps', label: 'Seifengalerie' },
     { id: 'about', label: 'Über mich' },
     { id: 'benefits', label: 'Warum Handarbeit?' },
-    { id: 'testpage', label: '⚙ Testseite' },
-    { id: 'testpage-v2a', label: '⚙ V2a' },
-    { id: 'testpage-v2b', label: '⚙ V2b' },
-    { id: 'testpage-v2c', label: '⚙ V2c' },
   ] as const;
 
   const handleNav = (section: ActiveSection) => {

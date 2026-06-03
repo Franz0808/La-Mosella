@@ -24,12 +24,4 @@ export interface Soap {
   };
 }
 
-export type ActiveSection =
-  | 'home'
-  | 'soaps'
-  | 'about'
-  | 'benefits'
-  | 'testpage'
-  | 'testpage-v2a'
-  | 'testpage-v2b'
-  | 'testpage-v2c';
+export type ActiveSection = 'home' | 'soaps' | 'about' | 'benefits';

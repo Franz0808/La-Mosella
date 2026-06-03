@@ -7,10 +7,6 @@ import SoapsCatalog from './components/SoapsCatalog';
 import AboutUs from './components/AboutUs';
 import WhyHandmade from './components/WhyHandmade';
 import ContactModal from './components/ContactModal';
-import TestPage from './components/TestPage';
-import TestPageV2a from './components/TestPageV2a';
-import TestPageV2b from './components/TestPageV2b';
-import TestPageV2c from './components/TestPageV2c';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState<ActiveSection>('home');
@@ -34,7 +30,7 @@ export default function App() {
       {/* Main Dynamic View Area */}
       <main className="flex-grow">
         {activeSection === 'home' && (
-          <TestPageV2c onNavigate={handleSectionChange} />
+          <InteractiveFresco onNavigate={handleSectionChange} />
         )}
         
         {activeSection === 'soaps' && (
@@ -49,21 +45,7 @@ export default function App() {
           <WhyHandmade />
         )}
 
-        {activeSection === 'testpage' && (
-          <TestPage onNavigate={handleSectionChange} />
-        )}
 
-        {activeSection === 'testpage-v2a' && (
-          <TestPageV2a onNavigate={handleSectionChange} />
-        )}
-
-        {activeSection === 'testpage-v2b' && (
-          <TestPageV2b onNavigate={handleSectionChange} />
-        )}
-
-        {activeSection === 'testpage-v2c' && (
-          <TestPageV2c onNavigate={handleSectionChange} />
-        )}
       </main>
 
       {/* Elegant Footer */}

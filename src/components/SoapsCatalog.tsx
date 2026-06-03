@@ -27,7 +27,7 @@ export default function SoapsCatalog() {
           Naturreine Seifenkunst der Mosel
         </span>
         <h2 className="font-serif text-3xl md:text-5xl font-normal text-moss tracking-tight">
-          Unser Seifenkatalog
+          Unsere Seifengalerie
         </h2>
         <div className="w-16 h-[1px] bg-gold mx-auto my-4" />
         <p className="font-sans text-stone-600 text-sm max-w-xl mx-auto">
