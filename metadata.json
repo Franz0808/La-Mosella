@@ -1,0 +1,6 @@
+{
+  "name": "La Mosella Seifenmanufaktur",
+  "description": "Ein virtueller Seifenkatalog im eleganten Jugendstil-Design für die handgemachten Naturseifen von Marion Muszarsky an der Mosel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
