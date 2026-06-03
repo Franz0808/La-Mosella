@@ -3,7 +3,8 @@
     "allow": [
       "Bash(Get-Content \"C:\\\\Users\\\\Franz\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Franz-Developments-La-Mosella-v2\\\\e54cf4a9-e905-4901-a037-0cd99c025546\\\\tasks\\\\btm30hmiw.output\" -Wait)",
       "Bash(Select-String -Pattern \"added|error|warn\")",
-      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\Franz\\\\Developments\\\\La Mosella v2\" | Select-Object Name, @{Name=\"Type\";Expression={if\\($_.PSIsContainer\\){\"Directory\"}else{\"File\"}}})"
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\Franz\\\\Developments\\\\La Mosella v2\" | Select-Object Name, @{Name=\"Type\";Expression={if\\($_.PSIsContainer\\){\"Directory\"}else{\"File\"}}})",
+      "PowerShell(Copy-Item *)"
     ]
   }
 }

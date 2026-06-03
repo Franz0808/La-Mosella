@@ -170,7 +170,7 @@ export const GENERAL_INFOS = {
   vorteile: [
     {
       title: 'Echtes Kaltverfahren (Cold Process)',
-      description: 'Unsere Seifen werden bei niedrigen Temperaturen (unter 40°C) von Hand gerührt. Dadurch bleiben alle wertvollen Vitamine, Antioxidantien und pflegenden Öle im fertigen Produkt komplett erhalten.'
+      description: 'meine Seifen werden bei niedrigen Temperaturen (unter 40°C) von Hand gerührt. Dadurch bleiben alle wertvollen Vitamine, Antioxidantien und pflegenden Öle im fertigen Produkt komplett erhalten.'
     },
     {
       title: 'Erhaltenes natürliches Glycerin',
@@ -178,11 +178,11 @@ export const GENERAL_INFOS = {
     },
     {
       title: 'Luxuriöse Überfettung (8% bis 12%)',
-      description: 'Wir berechnen unsere Rezepturen so, dass ein großer Teil des wertvollen Öls unverseift bleibt. Diese feinen Öle (z.B. Mandel- oder Traubenkernöl) legen sich als intensive Pflege direkt beim Waschen schützend auf Ihre Haut.'
+      description: 'Wir berechnen meine Rezepturen so, dass ein großer Teil des wertvollen Öls unverseift bleibt. Diese feinen Öle (z.B. Mandel- oder Traubenkernöl) legen sich als intensive Pflege direkt beim Waschen schützend auf Ihre Haut.'
     },
     {
       title: '100% Biologisch abbaubar & Mikroplastikfrei',
-      description: 'Keine künstlichen Tenside, kein Silikon, kein Erdöl und absolut palmölfrei. Mit unseren Seifen waschen Sie sich mit dem reinen Gewissen, dass keinerlei schädliche Stoffe in den Wasserkreislauf gelangen.'
+      description: 'Keine künstlichen Tenside, kein Silikon, kein Erdöl und absolut palmölfrei. Mit meinen Seifen waschen Sie sich mit dem reinen Gewissen, dass keinerlei schädliche Stoffe in den Wasserkreislauf gelangen.'
     },
     {
       title: 'Keine synthetischen Konservierungs- & Farbstoffe',
@@ -190,9 +190,9 @@ export const GENERAL_INFOS = {
     }
   ],
   geschichte: {
-    titel: 'Die Essenz der Mosel im Herzen unserer handgemachten Naturseifen',
+    titel: 'Die Essenz der Mosel im Herzen meiner handgemachten Naturseifen',
     philosophie: 'La Mosella Seifenmanufaktur verbindet uraltes, traditionelles Saponifikations-Handwerk mit den reichhaltigen Naturschätzen des Moseltals. Gegründet von Marion Muszarsky in Traben-Trarbach, fertigen wir jede einzelne Seife in liebevoller Handarbeit an.',
-    absatz1: 'Unsere Heimat, die weltberühmte Moselregion mit ihren steilen Schieferhängen und dem milden, fast mediterranen Mikroklima, bietet eine Fülle an botanischen Raritäten. Hier wachsen nicht nur edle Weine, sondern auch der Rote Weinbergpfirsich, wilde Kräuter, duftende Holundersträucher und zarte Kamillenblüten direkt an den Flussufern.',
-    absatz2: 'Wir glauben fest an ein Leben im Einklang mit der Natur. Deshalb verzichten wir konsequent auf künstliche Zusätze, Tenside und unnötige Plastikverpackungen. Jedes Seifenstück reift sechs Wochen lang in unseren Holzregalen, um seine perfekte Festigkeit und Milde zu entfalten. Spüren Sie den Unterschied, den nur echt handgemachte Naturseife auf Ihrer Haut bewirken kann.'
+    absatz1: 'meine Heimat, die weltberühmte Moselregion mit ihren steilen Schieferhängen und dem milden, fast mediterranen Mikroklima, bietet eine Fülle an botanischen Raritäten. Hier wachsen nicht nur edle Weine, sondern auch der Rote Weinbergpfirsich, wilde Kräuter, duftende Holundersträucher und zarte Kamillenblüten direkt an den Flussufern.',
+    absatz2: 'Wir glauben fest an ein Leben im Einklang mit der Natur. Deshalb verzichten wir konsequent auf künstliche Zusätze, Tenside und unnötige Plastikverpackungen. Jedes Seifenstück reift sechs Wochen lang in meinen Holzregalen, um seine perfekte Festigkeit und Milde zu entfalten. Spüren Sie den Unterschied, den nur echt handgemachte Naturseife auf Ihrer Haut bewirken kann.'
   }
 };

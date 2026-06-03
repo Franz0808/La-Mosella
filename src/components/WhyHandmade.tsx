@@ -46,7 +46,7 @@ export default function WhyHandmade() {
         </h2>
         <div className="w-16 h-[1px] bg-gold mx-auto my-4" />
         <p className="font-sans text-stone-600 text-sm max-w-xl mx-auto">
-          Massenseifen aus dem Supermarkt schaden oft unserem Säureschutzmantel und belasten das Wasser. Erfahren Sie, warum echtes Seifenhandwerk die gesündeste Wohltat für Sie und das Moseltal ist.
+          Massenseifen aus dem Supermarkt schaden oft meinem Säureschutzmantel und belasten das Wasser. Erfahren Sie, warum echtes Seifenhandwerk die gesündeste Wohltat für Sie und das Moseltal ist.
         </p>
       </div>
 
@@ -62,7 +62,7 @@ export default function WhyHandmade() {
           id="btn-tab-benefits"
         >
           <Leaf className="w-4 h-4" />
-          <span>Die 5 Säulen unserer Qualität</span>
+          <span>Die 5 Säulen meiner Qualität</span>
         </button>
         <button
           onClick={() => setActiveTab('comparison')}

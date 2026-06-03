@@ -10,26 +10,23 @@ const NAV_CARDS = [
   {
     id: 'soaps' as const,
     title: 'Seifengalerie',
-    subtitle: 'Entdecken Sie unsere Naturseifen',
-    desc: 'Hergestellt im traditionellen Kaltverfahren mit wertvollen Pflanzenölen, Heilkräutern und Mosel-Zutaten.',
+    desc: 'Entdecke meine Seifenvielfalt – hergestellt im traditionellen Kaltverfahren mit wertvollen Rohstoffen.',
     btn: 'Katalog öffnen ❦',
-    img: '/images/Icon Soapes.png',
+    img: '/images/Icon Soapes.webp',
   },
   {
     id: 'about' as const,
     title: 'Über mich',
-    subtitle: 'Marion Muszarsky & Philosophie',
-    desc: 'Erfahren Sie mehr über die Gründerin, unsere traditionelle Werkstatt und die Liebe zur moselländischen Natur.',
+    desc: 'Erfahre mehr über mich, meine Werte und die Leidenschaft hinter meinen handgemachten Seifen.',
     btn: 'Meine Geschichte ❦',
-    img: '/images/Icon about me.png',
+    img: '/images/Icon about me.webp',
   },
   {
     id: 'benefits' as const,
     title: 'La Mosella',
-    subtitle: 'Philosophie & Handarbeit',
-    desc: 'Erfahren Sie, warum unsere handgerührten Naturseifen eine Wohltat für Ihre Haut und unsere Umwelt sind.',
-    btn: 'Unsere Qualität ❦',
-    img: '/images/Icon La Mosella.png',
+    desc: 'Erfahren Sie, was meine Seifen besonders macht.',
+    btn: 'meine Qualität ❦',
+    img: '/images/Icon La Mosella.webp',
   },
 ];
 
@@ -45,10 +42,10 @@ function OrnamentDivider({ className = '', light = false }: { className?: string
 
 function Hero() {
   return (
-    <section className="relative overflow-hidden min-h-[80vh] flex items-center justify-center px-6">
+    <section className="relative overflow-hidden min-h-screen flex items-center justify-center px-6">
       <div className="absolute inset-0 pointer-events-none">
         <img
-          src="/images/Landing Page Pond v8.png"
+          src="/images/Landing Page Pond v8.webp"
           alt=""
           aria-hidden
           className="hidden md:block absolute inset-0 w-full h-full object-cover"
@@ -57,22 +54,15 @@ function Hero() {
       </div>
 
       <div className="relative z-10 max-w-3xl text-center page-enter pt-14 pb-24 md:pt-16 md:pb-32">
-        <span className="font-serif italic text-stone-600 tracking-[0.4em] text-xs md:text-sm uppercase block mb-7">
-          Willkommen in der
-        </span>
         <h1 className="font-serif text-[3.25rem] md:text-7xl lg:text-8xl text-moss-dark leading-[1.02] tracking-tight drop-shadow-[0_2px_8px_rgba(253,251,242,0.9)]">
           La Mosella
         </h1>
-        <h2 className="font-serif italic text-2xl md:text-4xl lg:text-5xl text-moss mt-3 tracking-wide drop-shadow-[0_1px_6px_rgba(253,251,242,0.85)]">
+        <p className="font-serif italic text-xl md:text-2xl text-moss-dark/80 mt-4 tracking-wide drop-shadow-[0_1px_6px_rgba(253,251,242,0.85)]">
           Seifenmanufaktur
-        </h2>
-        <OrnamentDivider className="my-9" />
-        <p className="font-sans text-base md:text-lg text-stone-700 leading-relaxed max-w-xl mx-auto drop-shadow-[0_1px_4px_rgba(253,251,242,0.85)]">
-          Inmitten der malerischen Kulisse des Moseltals rühren wir biologisch reine Naturseifen von
-          Hand.
         </p>
-        <p className="mt-10 font-serif italic text-[11px] text-stone-600 tracking-[0.4em] uppercase">
-          Traben-Trarbach · Deutschland
+        <OrnamentDivider className="my-8" />
+        <p className="font-serif italic text-base md:text-lg text-moss-dark/70 drop-shadow-[0_1px_4px_rgba(253,251,242,0.85)]">
+          Handgerührte Naturseifen mit Charakter
         </p>
       </div>
     </section>
@@ -81,16 +71,7 @@ function Hero() {
 
 function NavCardsSection({ onNavigate }: { onNavigate: (s: ActiveSection) => void }) {
   return (
-    <section className="relative bg-gold/15 py-20 md:py-28 px-6 overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none">
-        <img
-          src="/images/La Mosella Landing Page no text.png"
-          alt=""
-          aria-hidden
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-moss/80" />
-      </div>
+    <section className="py-20 md:py-28 px-6" style={{ backgroundColor: '#6B5535' }}>
 
       <div className="relative z-10 max-w-6xl mx-auto">
         <motion.div
@@ -178,10 +159,53 @@ function ClosingSignature() {
   );
 }
 
+function SoapInfoSection() {
+  return (
+    <motion.section
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-80px' }}
+      transition={{ duration: 0.7, ease: 'easeOut' }}
+      className="py-16 md:py-20 px-6"
+      style={{ backgroundColor: '#F5EFE4' }}
+    >
+      <div className="max-w-2xl mx-auto text-center space-y-5">
+        <OrnamentDivider />
+        <h2 className="font-serif text-3xl md:text-4xl font-normal text-moss-dark tracking-tight pt-2">
+          Natürliche Pflege für jeden Tag
+        </h2>
+        <div className="h-px w-10 bg-gold mx-auto" />
+        <div className="space-y-4 text-stone-600 text-sm md:text-base leading-relaxed font-sans">
+          <p>
+            Alle Seifen von La Mosella entstehen in sorgfältiger Handarbeit aus hochwertigen pflanzlichen
+            Ölen und Buttern. Sie reinigen die Haut sanft und verwöhnen mit einem cremigen Schaum sowie
+            einem angenehm gepflegten Hautgefühl.
+          </p>
+          <p>
+            Die Naturseifen eignen sich für die tägliche Reinigung von Händen, Gesicht und Körper und sind
+            damit vielseitige Begleiter für die natürliche Hautpflege.
+          </p>
+          <p>
+            Die schonende Herstellung im Kaltverfahren, ausgewogene Rezepturen und die kontinuierliche
+            Weiterentwicklung meiner Produkte bilden die Grundlage für die besondere Qualität meiner Naturseifen.
+          </p>
+          <p>
+            Viele Kundinnen und Kunden schätzen die gute Verträglichkeit meiner Seifen – auch bei empfindlicher
+            Haut. Für besonders sensible oder duftempfindliche Haut werden häufig die unbedufteten Varianten
+            bevorzugt, insbesondere die Olivenölseife und die Sole & Seide Seife.
+          </p>
+        </div>
+        <OrnamentDivider className="pt-2" />
+      </div>
+    </motion.section>
+  );
+}
+
 export default function InteractiveFresco({ onNavigate }: Props) {
   return (
     <div className="bg-vanilla text-moss-dark select-none">
       <Hero />
+      <SoapInfoSection />
       <NavCardsSection onNavigate={onNavigate} />
       <ClosingSignature />
     </div>

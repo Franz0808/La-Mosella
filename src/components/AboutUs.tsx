@@ -29,7 +29,7 @@ export default function AboutUs({ showContactFormImmediately = false }: AboutUsP
           Die Kunst der Saponifikation an der Mosel
         </span>
         <h2 className="font-serif text-3xl md:text-5xl font-normal text-moss tracking-tight">
-          Über mich & unsere Manufaktur
+          Über mich & meine Manufaktur
         </h2>
         <div className="w-16 h-[1px] bg-gold mx-auto my-4" />
       </div>
@@ -42,20 +42,28 @@ export default function AboutUs({ showContactFormImmediately = false }: AboutUsP
               « Jedes Seifenstück ist ein Liebesbrief an die Natur der Mosel »
             </h3>
             <p>
-              Mein Name ist <strong>Marion Muszarsky</strong>. Als Gründerin der{' '}
-              <span className="text-moss font-semibold">La Mosella Seifenmanufaktur</span> im malerischen{' '}
-              <strong>Traben-Trarbach</strong> habe ich mich mit Leib und Seele einer jahrhundertealten{' '}
-              Kultur verschrieben: dem Rühren von reinen, organischen Naturseifen im exklusiven, schonenden Kaltverfahren.
+              Mein Name ist <strong>Marion Muszarsky</strong> und ich bin die Gründerin von{' '}
+              <span className="text-moss font-semibold">La Mosella</span>.
             </p>
             <p>
-              Unsere Werkstatt atmet die Ruhe des Moseltals. Hier reifen die Seifen umgeben von getrockneten{' '}
-              Kräuterbündeln und verströmen den natürlichen Duft von ätherischem Lavendel, schützender Kamille und würzigem Zedernholz.{' '}
-              Wir verwenden ausschließlich naturreine Rohstoffe, gewonnen aus kontrolliert biologischem Anbau und veredelt{' '}
-              durch Kostbarkeiten unserer Heimat – wie das kaltgepresste Bio-Traubenkernöl von hiesigen Weinhängen.
+              Was einst als kreatives Hobby begann, entwickelte sich zu einer großen Leidenschaft. Nach mehreren Jahren
+              des Experimentierens und Lernens gründete ich 2015 meine eigene kleine Seifenmanufaktur.
             </p>
-            <p className="italic">
-              „Wir entziehen unseren Seifen nichts – im Gegensatz zu industriell hergestellten Tensidriegeln bleibt{' '}
-              das feuchtigkeitsspendende Glycerin voll erhalten. Jedes Stück ist ein hautpflegendes Unikat und sanft biologisch abbaubar.“
+            <p>
+              Seitdem entstehen mit viel Liebe zum Detail, hochwertigen pflanzlichen Rohstoffen und handwerklicher
+              Sorgfalt einzigartige Naturseifen. Die kontinuierliche Weiterentwicklung meiner Rezepturen, die sorgfältige
+              Auswahl der Inhaltsstoffe und meine Begeisterung für das traditionelle Seifenhandwerk begleiten mich bis heute.
+            </p>
+            <p>
+              Jede Seife wird von mir in kleinen Chargen von Hand gefertigt. Mein Ziel ist es, natürliche Pflege mit
+              hoher Qualität, liebevoller Gestaltung und einem besonderen Anspruch an Ästhetik zu verbinden.
+            </p>
+            <p>
+              Ich freue mich, wenn meine Seifen nicht nur die Haut verwöhnen, sondern auch ein kleines Stück Freude
+              in den Alltag bringen.
+            </p>
+            <p className="italic font-serif text-moss">
+              Natürlich. Handgemacht. Mit Liebe.
             </p>
           </div>
 
@@ -93,7 +101,7 @@ export default function AboutUs({ showContactFormImmediately = false }: AboutUsP
           {/* Portrait Illustration */}
           <div className="rounded-2xl border-2 border-moss overflow-hidden bg-[#FAF5E0] shadow-xl relative p-3 jugendstil-corner">
             <img 
-              src="/images/marion_portrait_1779655251734.png" 
+              src="/images/marion_portrait_1779655251734.webp"
               alt="Marion Muszarsky in der Seifenmanufaktur" 
               className="w-full h-auto rounded-lg object-cover"
               referrerPolicy="no-referrer"
@@ -149,7 +157,7 @@ export default function AboutUs({ showContactFormImmediately = false }: AboutUsP
               Unverbindliche Bestellanfrage
             </h4>
             <p className="text-[11px] text-stone-500 leading-snug mb-4">
-              Haben Sie Fragen zu unseren Naturseifen, Sonderwünschen für Hochzeiten/Feste oder möchten Sie eine Bestellung aufgeben? Schreiben Sie mir direkt!
+              Haben Sie Fragen zu meinen Naturseifen, Sonderwünschen für Hochzeiten/Feste oder möchten Sie eine Bestellung aufgeben? Schreiben Sie mir direkt!
             </p>
 
             {submitted ? (
