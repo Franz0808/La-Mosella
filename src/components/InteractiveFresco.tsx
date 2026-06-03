@@ -13,7 +13,7 @@ const NAV_CARDS = [
     subtitle: 'Entdecken Sie unsere Naturseifen',
     desc: 'Hergestellt im traditionellen Kaltverfahren mit wertvollen Pflanzenölen, Heilkräutern und Mosel-Zutaten.',
     btn: 'Katalog öffnen ❦',
-    img: '/src/assets/images/Icon Soapes.png',
+    img: '/images/Icon Soapes.png',
   },
   {
     id: 'about' as const,
@@ -21,7 +21,7 @@ const NAV_CARDS = [
     subtitle: 'Marion Muszarsky & Philosophie',
     desc: 'Erfahren Sie mehr über die Gründerin, unsere traditionelle Werkstatt und die Liebe zur moselländischen Natur.',
     btn: 'Meine Geschichte ❦',
-    img: '/src/assets/images/Icon about me.png',
+    img: '/images/Icon about me.png',
   },
   {
     id: 'benefits' as const,
@@ -29,7 +29,7 @@ const NAV_CARDS = [
     subtitle: 'Philosophie & Handarbeit',
     desc: 'Erfahren Sie, warum unsere handgerührten Naturseifen eine Wohltat für Ihre Haut und unsere Umwelt sind.',
     btn: 'Unsere Qualität ❦',
-    img: '/src/assets/images/Icon La Mosella.png',
+    img: '/images/Icon La Mosella.png',
   },
 ];
 
@@ -48,7 +48,7 @@ function Hero() {
     <section className="relative overflow-hidden min-h-[80vh] flex items-center justify-center px-6">
       <div className="absolute inset-0 pointer-events-none">
         <img
-          src="/src/assets/images/Landing Page Pond v8.png"
+          src="/images/Landing Page Pond v8.png"
           alt=""
           aria-hidden
           className="hidden md:block absolute inset-0 w-full h-full object-cover"
@@ -84,7 +84,7 @@ function NavCardsSection({ onNavigate }: { onNavigate: (s: ActiveSection) => voi
     <section className="relative bg-gold/15 py-20 md:py-28 px-6 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <img
-          src="/src/assets/images/La Mosella Landing Page no text.png"
+          src="/images/La Mosella Landing Page no text.png"
           alt=""
           aria-hidden
           className="absolute inset-0 w-full h-full object-cover"

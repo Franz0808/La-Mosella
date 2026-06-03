@@ -93,7 +93,7 @@ export default function AboutUs({ showContactFormImmediately = false }: AboutUsP
           {/* Portrait Illustration */}
           <div className="rounded-2xl border-2 border-moss overflow-hidden bg-[#FAF5E0] shadow-xl relative p-3 jugendstil-corner">
             <img 
-              src="/src/assets/images/marion_portrait_1779655251734.png" 
+              src="/images/marion_portrait_1779655251734.png" 
               alt="Marion Muszarsky in der Seifenmanufaktur" 
               className="w-full h-auto rounded-lg object-cover"
               referrerPolicy="no-referrer"

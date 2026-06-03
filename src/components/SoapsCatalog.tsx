@@ -219,7 +219,7 @@ export default function SoapsCatalog() {
                   {/* Decorative Vintage Botanicals card image */}
                   <div className="mt-8 border border-gold/30 rounded-lg overflow-hidden relative shadow bg-vanilla">
                     <img 
-                      src="/src/assets/images/artisan_soaps_fresco_1779655270706.png" 
+                      src="/images/La Mosella Soaps.png" 
                       alt="Handgemachte Seifenauslage" 
                       className="w-full h-36 object-cover opacity-90"
                       referrerPolicy="no-referrer"
