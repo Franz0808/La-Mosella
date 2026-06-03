@@ -5,8 +5,8 @@ const soap = {
   // Anzeigename der Seife
   name: 'Name der Seife',
 
-  // Pfad zum Bild: Lege das Bild in src/assets/images/ ab und trag den Dateinamen ein
-  image: '/src/assets/images/Seifengalerie/DATEINAME.webp',
+  // Pfad zum Bild: Lege das Bild in public/images/Seifengalerie/ ab und trag den Dateinamen ein
+  image: '/images/Seifengalerie/DATEINAME.webp',
 
   // 1–2 Sätze, die die Seife beschreiben
   beschreibung: 'Kurze Beschreibung der Seife. Was macht sie besonders?',

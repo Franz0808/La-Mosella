@@ -1,7 +1,7 @@
 const soap = {
   name: 'Ingwer Orange',
 
-  image: '/src/assets/images/Seifengalerie/Ingwer Orange.webp',
+  image: '/images/Seifengalerie/Ingwer Orange.webp',
 
   beschreibung: 'Ingwer Orange – eine erfrischende Naturseife mit fruchtigem, würzigem Duft.',
 
