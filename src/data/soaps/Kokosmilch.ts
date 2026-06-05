@@ -6,7 +6,7 @@ const soap = {
   name: 'Kokosmilch',
 
   // Pfad zum Bild: Lege das Bild in src/assets/images/ ab und trag den Dateinamen ein
-  image: '/images/Seifengalerie/Kokosmilch.webp',
+  image: '/images/Seifengalerie/Kokosmilch_Seife.webp',
 
   // 1–2 Sätze, die die Seife beschreiben
   beschreibung: 'Kokosmilchseife – eine luxuriöse Naturseife, die durch ihre cremige Rezeptur, den seidigen Schaum und ihren warmen, sanften Duft begeistert.',
