@@ -6,7 +6,7 @@ const soap = {
   name: 'Zitronenseife',
 
   // Pfad zum Bild: Lege das Bild in src/assets/images/ ab und trag den Dateinamen ein
-  image: '/images/Seifengalerie/Zitronenseife.webp.webp',
+  image: '/images/Seifengalerie/Zitronenseife.webp',
 
   // 1–2 Sätze, die die Seife beschreiben
   beschreibung: 'Ein Hauch mediterraner Leichtigkeit, eingefangen in einer hochwertigen Naturseife. Edle pflanzliche Öle und Buttern wie Olivenöl, Sheabutter, Kakaobutter und Mandelöl vereinen milde Reinigung mit cremigen Schaum und einer extra Portion Pflege.',

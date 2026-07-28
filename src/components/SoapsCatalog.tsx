@@ -88,7 +88,7 @@ export default function SoapsCatalog() {
                 <h3 className="font-serif text-2xl font-bold text-moss-dark mb-2 leading-tight">
                   {soap.name}
                 </h3>
-                <p className="font-sans text-xs text-moss-dark/65 leading-relaxed mb-3 flex-1">
+                <p className="font-sans text-xs text-moss-dark/65 leading-relaxed mb-3 flex-1 line-clamp-3">
                   {soap.beschreibung}
                 </p>
                 <p className="font-serif text-xs italic text-gold leading-snug">
