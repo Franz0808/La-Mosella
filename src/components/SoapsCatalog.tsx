@@ -27,9 +27,7 @@ export default function SoapsCatalog() {
           Meine Seifengalerie
         </h2>
         <div className="w-16 h-[1px] bg-gold mx-auto my-4" />
-
-
-
+      </div>
 
 
         {/* Search + Filters */}
@@ -196,6 +194,6 @@ export default function SoapsCatalog() {
             </div>
           )}
         </AnimatePresence>
-      </div>
-      );
+    </div>
+  );
 }
