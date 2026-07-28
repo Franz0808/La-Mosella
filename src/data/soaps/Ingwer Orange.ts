@@ -3,7 +3,7 @@ const soap = {
 
   image: '/images/Seifengalerie/Ingwer_Orange_Seife.webp',
 
-  beschreibung: 'Ingwer Orange – eine erfrischende Naturseife mit fruchtigem, würzigem Duft.',
+  beschreibung: 'Ingwer-Orangenseife – eine erfrischende Naturseife mit fruchtigem, würzigem Duft.',
 
   gewicht: '95g',
 

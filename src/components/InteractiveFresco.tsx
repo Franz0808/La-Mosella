@@ -176,7 +176,7 @@ function SoapInfoSection() {
         <div className="h-px w-10 bg-gold mx-auto" />
         <div className="space-y-4 text-moss-dark/65 text-sm md:text-base leading-relaxed font-sans">
           <p>
-            Alle Seifen von La Mosella entstehen in sorgfältiger Handarbeit aus hochwertigen pflanzlichen
+            Alle Seifen von <em className="font-serif italic">La Mosella</em> entstehen in sorgfältiger Handarbeit aus hochwertigen pflanzlichen
             Ölen und Buttern. Sie reinigen die Haut sanft und verwöhnen mit einem cremigen Schaum sowie
             einem angenehm gepflegten Hautgefühl.
           </p>

@@ -31,7 +31,7 @@ export default function Footer({ setActiveSection }: FooterProps) {
           </div>
           <p className="font-sans text-xs text-vanilla-dark/80 leading-relaxed max-w-sm">
             Liebevoll kaltgerührte Naturseifen aus Traben-Trarbach an der Mosel.
-            Frei von Palmöl und synthetischen Tensiden. Rein, wirksam und reichhaltig hautfreundlich.
+            Frei von Palmöl und synthetischen Tensiden.
           </p>
           <div className="text-[10px] text-gold-light font-serif">
             ❦ Handwerkliche Saponifikation mit Tradition
@@ -100,7 +100,6 @@ export default function Footer({ setActiveSection }: FooterProps) {
         <div className="max-w-6xl mx-auto mt-8 pt-6 border-t border-gold/15 text-xs text-vanilla-dark/80 font-sans space-y-3">
           <h3 className="font-serif text-base font-bold text-gold-light">Impressum</h3>
           <div className="space-y-1">
-            <p className="font-semibold text-vanilla/90">Angaben gemäß § 5 TMG</p>
             <p>Marion Muszarsky</p>
             <p>Litziger Weg 14</p>
             <p>56841 Traben-Trarbach</p>
@@ -110,11 +109,11 @@ export default function Footer({ setActiveSection }: FooterProps) {
             <p><span className="text-vanilla/70">E-Mail:</span> lm-seifenmanufaktur@t-online.de</p>
           </div>
           <div className="space-y-1">
-            <p><span className="text-vanilla/70">USt-IdNr. gemäß § 27a UStG:</span> DE300885658</p>
+            <p className="font-semibold text-vanilla/90">Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</p>
+            <p>Marion Muszarsky, Litziger Weg 14, 56841 Traben-Trarbach</p>
           </div>
           <div className="space-y-1">
-            <p className="font-semibold text-vanilla/90">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</p>
-            <p>Marion Muszarsky, Litziger Weg 14, 56841 Traben-Trarbach</p>
+            <p><span className="font-semibold text-vanilla/90">Hinweis gemäß § 19 UStG:</span> Als Kleinunternehmerin im Sinne des § 19 UStG wird keine Umsatzsteuer berechnet und daher nicht ausgewiesen.</p>
           </div>
           <div className="space-y-1">
             <p className="font-semibold text-vanilla/90">Website-Erstellung</p>
@@ -132,9 +131,7 @@ export default function Footer({ setActiveSection }: FooterProps) {
           >
             Impressum
           </button>
-          <p className="font-serif italic text-gold-light text-xs">
-            Handgefertigt mit rein biologischen Inhaltsstoffen.
-          </p>
+
         </div>
       </div>
     </footer>

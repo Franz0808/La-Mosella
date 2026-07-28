@@ -30,7 +30,7 @@ export default function KontaktPage() {
           </h1>
           <OrnamentDivider className="my-5" />
           <p className="font-sans text-sm md:text-base text-moss-dark/65 max-w-lg mx-auto leading-relaxed">
-            Ich freue mich über Ihre Nachricht – ob Bestellung, Frage oder einfach ein herzliches Hallo.
+            Ich freue mich auf Ihre Nachricht – ob Bestellung, Frage oder einfach Feedback.
           </p>
         </motion.div>
       </section>
