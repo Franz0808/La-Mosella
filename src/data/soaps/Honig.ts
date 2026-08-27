@@ -5,7 +5,7 @@ const soap = {
   image: '/images/Seifengalerie/Honig_Seife.webp',
 
   // 1–2 Sätze, die die Seife beschreiben
-  beschreibung: 'Eine cremige, warme Wohlfühlseife mit elegantem Pflegecharakter für anspruchsvolle Haut sowie einem zarten cremigen Schaum.',
+  beschreibung: 'Mit Bienenwachs und Honig aus der Heimat. Für anspruchsvolle Haut bietet sie einen äußerst cremigen Schaum, reinigt und pflegt zugleich. Verpackt in einer hübschen Dose ist dieses kleine Pflegestück ein praktischer Reisebegleiter.',
 
   // Gewicht des fertigen Seifenstücks
   gewicht: '35g',
@@ -20,7 +20,7 @@ const soap = {
 
   // Inhaltsstoffe — einfach den vollständigen INCI-Text hier einfügen (Copy & Paste)
   // Inklusive Fußnotenzeilen wie "* = kbA" usw.
-  inhaltsstoffe: `OLEA EUROPAEA FRUIT OIL* (Olivenöl*), AQUA (Wasser), COCOS NUCIFERA OIL (Kokosnußöl), SODIUM HYDROXIDE (Natriumhydroxid), PRUNUS AMYGDALUS DULCIS OIL (Mandelöl), ORBIGNYA OLEIFERA SEED OIL* (Babassuöl*), THEOBROMA CACAO SEED BUTTER (Kakaobutter), RICINUS COMMUNIS SEED OIL* (Rizinusöl*), CERA ALBA* (Bienenwachs*),MEL*(Honig*), PARFUM, HEXAMETHYLINDANOPYRAN, COUMARIN, PRUNUS AMYGDALUS DULCIS SEED EXTRACT (Mandelmilch), SODIUM LACTATE (Natriumlactat)
+  inhaltsstoffe: `OLEA EUROPAEA FRUIT OIL* (Olivenöl*), AQUA (Wasser), COCOS NUCIFERA OIL (Kokosnußöl), SODIUM HYDROXIDE (Natriumhydroxid), PRUNUS AMYGDALUS DULCIS OIL (Mandelöl), ORBIGNYA OLEIFERA SEED OIL* (Babassuöl*), THEOBROMA CACAO SEED BUTTER (Kakaobutter), RICINUS COMMUNIS SEED OIL* (Rizinusöl*), CERA ALBA* (Bienenwachs*),MEL*(Honig*), PARFUM, HEXAMETHYLINDANOPYRAN, COUMARIN, SODIUM LACTATE (Natriumlactat),  PRUNUS AMYGDALUS DULCIS SEED EXTRACT (Mandelmilch)
 
 * = kbA, aus kontrolliert biologischem Anbau 
 ** = Bestandteile ätherischer Öle & Aromen`,

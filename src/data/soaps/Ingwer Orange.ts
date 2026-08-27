@@ -3,7 +3,7 @@ const soap = {
 
   image: '/images/Seifengalerie/Ingwer_Orange_Seife.webp',
 
-  beschreibung: 'Ingwer-Orangenseife – eine erfrischende Naturseife mit fruchtigem, würzigem Duft.',
+  beschreibung: 'Fruchtige Leichtigkeit trifft auf sanfte Würze. Die harmonische Verbindung aus fruchtiger Orange, spritziger Litsea Cubeba und einer feinen Ingwernote verleiht dieser Naturseife ihren unverwechselbaren Charakter. Hochwertige Pflanzenöle und reichhaltige Buttern schenken einen cremigen Schaum und ein angenehm gepflegtes Hautgefühl.',
 
   gewicht: '95g',
 
