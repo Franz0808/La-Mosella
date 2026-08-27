@@ -18,7 +18,7 @@ const soap = {
   produktkategorie: 'Seife',
 
   // Duftbeschreibung: Was riecht man? Kopnoten, Herznoten, Basisnoten etc.
-  duft: 'Frisch, zitrisch und würzig: Spritzige Limette trifft auf die aromatische Wärme von Koriander und feine Ingwernoten. Sanfte Akzente von Amber und Zedernholz verleihen dem Duft Tiefe und sorgen für einen angenehm warmen, ausgewogenen Ausklang.',
+  duft: 'Frisch, zitrisch und würzig: Spritzige Limette trifft auf die aromatische Wärme von Koriander und feine Ingwernoten. Sanfte Akzente von Amber und Zedernholz verleihen dem Duft Tiefe.',
 
   // Inhaltsstoffe — jeder Eintrag hat einen deutschen Namen und den offiziellen INCI-Namen
   inhaltsstoffe: `OLEA EUROPAEA FRUIT OIL* (Olivenöl*), AQUA (Wasser), COCOS NUCIFERA OIL (Kokosnußöl), SODIUM HYDROXIDE (Natriumhydroxid), BUTYROSPERMUM PARKII BUTTER* (Sheabutter*), MANGIFERA INDICA SEED BUTTER (Mangobutter), ORBIGNYA OLEIFERA SEED OIL* (Babassuöl*), VITIS VINIFERA SEED OIL (Traubenkernöl), RICINUS COMMUNIS SEED OIL* (Rizinusöl*), Parfum, LIMONENE**, CITRUS AURANTIUM PEEL OIL**, CITRAL**, TETRAMETHYL ACETYLOCTAHYDRONAPHTHALENES**, LEMONGRASS OIL**, LINALOOL**, PINENE**, TERPINEOL**, SORBITOL (Sorbit), SODIUM CITRATE (Natriumcitrat), CI 77891, CI 77004

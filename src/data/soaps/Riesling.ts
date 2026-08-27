@@ -4,6 +4,7 @@
 const soap = {
   // Anzeigename der Seife
   name: 'Riesling',
+  featured: true,
 
   // Pfad zum Bild: Lege das Bild in src/assets/images/ ab und trag den Dateinamen ein
   image: '/images/Seifengalerie/Rieslingseife.webp',

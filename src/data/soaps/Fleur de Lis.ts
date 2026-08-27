@@ -13,7 +13,7 @@ const soap = {
 
   // Gewicht des fertigen Seifenstücks
   gewicht: '75g',
-  preis: '6,50 €',
+  preis: '6,00 €',
 
   produktkategorie: 'Seife',
 
