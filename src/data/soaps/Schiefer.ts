@@ -3,7 +3,7 @@
 
 const soap = {
   // Anzeigename der Seife
-  name: 'Schiefer – ein Stück Mosel',
+  name: 'Schiefer',
 
   // Pfad zum Bild: Lege das Bild in src/assets/images/ ab und trag den Dateinamen ein
   image: '/images/Seifengalerie/Schiefer_Seife.webp',
