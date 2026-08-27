@@ -63,7 +63,7 @@ function Hero() {
         </p>
         <OrnamentDivider className="my-8" />
         <p className="font-serif italic text-base md:text-lg text-moss-dark drop-shadow-[0_1px_4px_rgba(253,251,242,0.85)]">
-          Handgerührte Naturseifen mit Charakter
+          Handgefertigte Naturseifen mit Charakter aus dem Moseltal
         </p>
       </div>
     </section>
@@ -110,11 +110,10 @@ function NavCardsSection({ onNavigate }: { onNavigate: (s: ActiveSection) => voi
                   <img
                     src={card.img}
                     alt={card.title}
-                    className={`absolute inset-0 w-full h-full object-contain transition-transform duration-500 group-hover:scale-[1.04] ${
-                      card.smallImg
-                        ? 'px-16 pt-20 pb-10 md:px-20 md:pt-24 md:pb-12'
-                        : 'px-10 pt-16 pb-6 md:px-12 md:pt-20 md:pb-8'
-                    }`}
+                    className={`absolute inset-0 w-full h-full object-contain transition-transform duration-500 group-hover:scale-[1.04] ${card.smallImg
+                      ? 'px-16 pt-20 pb-10 md:px-20 md:pt-24 md:pb-12'
+                      : 'px-10 pt-16 pb-6 md:px-12 md:pt-20 md:pb-8'
+                      }`}
                   />
                 </div>
                 {/* Text area */}
@@ -190,8 +189,7 @@ function SoapInfoSection() {
           </p>
           <p>
             Viele Kundinnen und Kunden schätzen die gute Verträglichkeit meiner Seifen – auch bei empfindlicher
-            Haut. Für besonders sensible oder duftempfindliche Haut werden häufig die unbedufteten Varianten
-            bevorzugt, insbesondere die Olivenölseife und die Sole & Seide Seife.
+            Haut.
           </p>
         </div>
         <OrnamentDivider className="pt-2" />

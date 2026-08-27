@@ -9,7 +9,7 @@ const soap = {
   image: '/images/Seifengalerie/Buddhaseife.webp',
 
   // 1–2 Sätze, die die Seife beschreiben
-  beschreibung: 'Buddhaseife vereint eine luxuriöse Rezeptur mit einer eleganten Optik. Feine Goldadern, ein filigraner Buddhastempel und der warme Duft aus süßer Orange und würziger Nelke machen jedes Stück zu einem kleinen Unikat. Der cremige Schaum und wertvolle pflanzliche Öle schenken der Haut ein angenehm gepflegtes, geschmeidiges Hautgefühl.',
+  beschreibung: 'Buddhaseife vereint eine luxuriöse Rezeptur mit einer eleganten Optik. Feine Goldadern und ein filigraner Buddhastempel machen jedes Stück zu einem kleinen Unikat. Der cremige Schaum und wertvolle pflanzliche Öle schenken der Haut ein angenehm gepflegtes, geschmeidiges Hautgefühl.',
 
   // Gewicht des fertigen Seifenstücks
   gewicht: '75g',

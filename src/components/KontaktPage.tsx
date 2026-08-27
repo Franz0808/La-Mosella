@@ -35,32 +35,30 @@ export default function KontaktPage() {
         </motion.div>
       </section>
 
-      {/* Contact info + hours side by side */}
-      <section className="flex-grow flex items-center px-6 pb-12">
+      {/* Contact info */}
+      <section className="px-6 pb-12">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.15 }}
           className="max-w-3xl mx-auto w-full space-y-8"
         >
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="max-w-md mx-auto">
             {/* Contact details */}
-            <div className="bg-vanilla-dark border border-gold/20 rounded-2xl p-7 space-y-5">
+            <div className="bg-vanilla-dark border border-gold/20 rounded-2xl p-7 space-y-5 flex flex-col items-center text-center">
               <h3 className="font-serif text-lg text-moss-dark">Manufaktur-Kontakt</h3>
 
-              <div className="flex items-start gap-4">
-                <div className="w-9 h-9 rounded-full border border-gold/50 flex items-center justify-center bg-vanilla shrink-0 mt-0.5">
+              <div className="flex flex-col items-center gap-1">
+                <div className="w-9 h-9 rounded-full border border-gold/50 flex items-center justify-center bg-vanilla mb-1">
                   <MapPin className="w-4 h-4 text-moss" />
                 </div>
-                <div>
-                  <p className="font-serif text-base text-moss-dark font-semibold mb-0.5">Marion Muszarsky</p>
-                  <p className="font-sans text-sm text-moss-dark/65">Litziger Weg 14</p>
-                  <p className="font-sans text-sm text-moss-dark/65">56841 Traben-Trarbach</p>
-                </div>
+                <p className="font-serif text-base text-moss-dark font-semibold">Marion Muszarsky</p>
+                <p className="font-sans text-sm text-moss-dark/65">Litziger Weg 14</p>
+                <p className="font-sans text-sm text-moss-dark/65">56841 Traben-Trarbach</p>
               </div>
 
-              <div className="flex items-center gap-4">
-                <div className="w-9 h-9 rounded-full border border-gold/50 flex items-center justify-center bg-vanilla shrink-0">
+              <div className="flex flex-col items-center gap-1">
+                <div className="w-9 h-9 rounded-full border border-gold/50 flex items-center justify-center bg-vanilla mb-1">
                   <Phone className="w-4 h-4 text-moss" />
                 </div>
                 <a href="tel:015167000929" className="font-sans text-sm text-moss-dark/65 hover:text-moss transition-colors">
@@ -68,35 +66,13 @@ export default function KontaktPage() {
                 </a>
               </div>
 
-              <div className="flex items-center gap-4">
-                <div className="w-9 h-9 rounded-full border border-gold/50 flex items-center justify-center bg-vanilla shrink-0">
+              <div className="flex flex-col items-center gap-1">
+                <div className="w-9 h-9 rounded-full border border-gold/50 flex items-center justify-center bg-vanilla mb-1">
                   <Mail className="w-4 h-4 text-moss" />
                 </div>
-                <span className="font-sans text-sm text-moss-dark/65 break-all">
+                <span className="font-sans text-sm text-moss-dark/65">
                   lm-seifenmanufaktur@t-online.de
                 </span>
-              </div>
-            </div>
-
-            {/* Opening hours */}
-            <div className="bg-vanilla-dark border border-gold/20 rounded-2xl p-7 space-y-4">
-              <h3 className="font-serif text-lg text-moss-dark">Erreichbarkeit</h3>
-              <div className="space-y-2 font-sans text-sm text-moss-dark/65">
-                <div className="flex justify-between">
-                  <span>Mo – Fr</span>
-                  <span className="text-moss-dark font-medium">9:00 – 18:00 Uhr</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Sa</span>
-                  <span className="text-moss-dark font-medium">10:00 – 14:00 Uhr</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>So / Feiertags</span>
-                  <span className="text-moss-dark/40">Geschlossen</span>
-                </div>
-              </div>
-              <div className="pt-2 border-t border-gold/20 text-[11px] font-serif italic text-moss-dark/55">
-                ❦ Bestellungen per E-Mail jederzeit möglich
               </div>
             </div>
           </div>

@@ -18,7 +18,7 @@ const soap = {
   produktkategorie: 'Seife',
 
   // Duftbeschreibung: Was riecht man? Kopnoten, Herznoten, Basisnoten etc.
-  duft: 'Ein weicher, warmer Kokosduft mit cremigen Vanille- und Kaschmirnoten- sanft, elegant und wunderbar harmonisch.',
+  duft: 'Warm, weich und elegant. Feine Safrannoten und den sanft-holzigen Charakter von Sandelholz verleihen Herzstück seinen besonderen, sinnlichen Duft.',
 
   // Inhaltsstoffe — jeder Eintrag hat einen deutschen Namen und den offiziellen INCI-Namen
   inhaltsstoffe: `AQUA (Wasser), OLEA EUROPAEA FRUIT OIL* (Olivenöl*), COCOS NUCIFERA OIL (Kokosöl), BUTYROSPERMUM PARKII BUTTER* (Sheabutter*), SODIUM HYDROXIDE (Natriumhydroxid), PERSEA GRATISSIMA OIL (Avocadoöl), MANGIFERA INDICA SEED BUTTER (Mangobutter), ORBIGNYA OLEIFERA SEED OIL* (Babassuöl*), HELIANTHUS ANNUUS SEED OIL (Sonnenblumenöl), RICINUS COMMUNIS SEED OIL* (Rizinusöl*), SODIUM OLIVATE* (verseiftes Olivenöl*), SODIUM COCOATE (verseiftes Kokosöl), GLYCERIN, SODIUM SHEA BUTERATE* (verseifte Sheabutter*), SODIUM MANGOSEEDATE (verseifte Mangobutter), SODIUM SUNFLOWERSEEDATE (verseiftes Sonnenblumenöl), SODIUM CASTORATE* (verseiftes Rizinusöl*), PARFUM, BENZYL SALICYLATE**, LINALOOL**, TETRAMETHYL ACETYLOCTAHYDRONAPHTHALENES**, POGOSTEMON CABLIN OIL**, CITRONELLOL**, CI 77891, CI 77019, CI 77491, CI 75470

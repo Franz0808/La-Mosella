@@ -102,8 +102,8 @@ export default function SoapsCatalog() {
               <h3 className="font-serif text-2xl font-bold text-moss-dark mb-2 leading-tight">
                 {soap.name}
               </h3>
-              <p className="font-sans text-xs text-moss-dark/65 leading-relaxed mb-3 flex-1 line-clamp-3">
-                {soap.beschreibung}
+              <p className="font-sans text-xs text-moss-dark/65 leading-relaxed mb-3 flex-1">
+                {soap.beschreibung.length > 200 ? soap.beschreibung.slice(0, 200).trimEnd() + '…' : soap.beschreibung}
               </p>
               <p className="font-serif text-[15px] italic text-gold leading-snug">
                 {soap.duft}
