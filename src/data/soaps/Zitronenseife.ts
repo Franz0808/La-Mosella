@@ -3,7 +3,7 @@
 
 const soap = {
   // Anzeigename der Seife
-  name: 'Zitronenseife',
+  name: 'Zitrone',
 
   // Pfad zum Bild: Lege das Bild in src/assets/images/ ab und trag den Dateinamen ein
   image: '/images/Seifengalerie/Zitronenseife.webp',
