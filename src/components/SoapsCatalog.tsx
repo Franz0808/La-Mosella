@@ -84,7 +84,7 @@ export default function SoapsCatalog() {
             {/* Featured badge */}
             {soap.featured && (
               <div className="absolute top-3 left-3 z-10 bg-gold text-vanilla font-serif text-xs italic px-3 py-1 rounded-full shadow-md">
-                Kundenliebling
+                besonders beliebt
               </div>
             )}
 

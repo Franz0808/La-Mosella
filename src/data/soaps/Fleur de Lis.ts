@@ -9,7 +9,7 @@ const soap = {
   image: '/images/Seifengalerie/Fleur_de_Lis_Seife.webp',
 
   // 1–2 Sätze, die die Seife beschreiben
-  beschreibung: 'Eleganz in Seifenform. Fleur de Lis ist eine luxuriöse Naturseife. Die aufwendige Marmorierung verleiht jeder Seife ihre individuelle Ausstrahlung und macht sie zu einem besonderen Blickfang im Badezimmer. Hochwertige pflanzliche Öle und Buttern schenken der Haut milde Reinigung, reichhaltige Pflege und einen cremigen Schaum.',
+  beschreibung: 'Fleur de Lis ist eine luxuriöse Naturseife, deren kunstvoll ausgearbeitete Lilie und feine Mamorierung jedes Stück zu einem besonderen Unikat machen. Hochwertige pflanzliche Öle und Buttern sorgen für milde Reinigung, reichhaltige Pflege und einen cremigen, stabilen Schaum.',
 
   // Gewicht des fertigen Seifenstücks
   gewicht: '75g',
